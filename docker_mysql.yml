@@ -41,7 +41,7 @@
       become: yes    
       yum:
         name: mysql-server
-        state: latest
+        state: installed
 
     - name: Start and enable MySQL
       service:
