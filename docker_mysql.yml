@@ -40,11 +40,11 @@
     - name: Installing MySQL and dependencies
       become: yes    
       yum:
-        name: mysql-server
+        name: mariadb-server
         state: installed
 
     - name: Start and enable MySQL
       service:
-        name: mysql
+        name: mariadb
         state: started
         enabled: yes
